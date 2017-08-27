@@ -1,0 +1,77 @@
+body {
+  position: relative;
+}
+
+header{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7%;
+  background: #0097A7;
+}
+
+
+.ul-inline{
+  list-style-type: none;
+  margin: 0;
+}
+
+.li-inline {
+    display: inline;
+}
+
+.li-inline a {
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.li-inline a:hover {
+   opacity: 0.5;
+   text-decoration: underline;
+}
+ul.nav-pills {
+     top: 20px;
+     position: fixed;
+ }
+ div.col-sm-9 div {
+     height: 250px;
+     font-size: 28px;
+ }
+
+
+.about{
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-bottom: 15%;
+  background: #E8F5E9;
+  margin: 0%;
+
+}
+.abilities{
+  background: #81C784;
+  text-align: center;
+  padding: 5%
+}
+/* to remove the style form skills languages and tools list*/
+.col-md-6 li{
+  list-style-type: none;
+}
+.projects{
+  background: #E8F5E9;
+  padding: 5%;
+  text-align: center;
+}
+/* temp css for gitHub api request*/
+.apiEle{
+  background: #81C784;
+  padding: 5%;
+}
+.contact{
+  align-items: center;
+  background: #616161;
+}
