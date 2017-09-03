@@ -1,0 +1,27 @@
+<form class="form" method="post" action="/contact">
+	<h3>More Information</h3>
+	<p>For more information, please contact me using the form below</p>
+	<p>Items marked * are required fields</p>
+	<div class="form-entry">
+		<label for="name">Contact name * :</label>
+		<input type="text" name="name" id="name" size="25" required>
+		<div class="error-message" id="name-worning"></div>
+	</div>
+	<div class="form-entry">
+		<label for="email">Contact email address * :</label>
+		<input type="email" name="email" id="email" size="50" required pattern="[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" title="name@example.com">
+		<div class="error-message" id="email-worning"></div>
+	</div>
+	<div class="form-entry">
+		<label for="phone">Contact phone number:</label>
+		<input type="text" name="phone" id="phone" size="50" pattern="^[\d\s+()]{0,}$" title="07654321 / 0044 123456789">
+		<div class="error-message" id="phone-worning"></div>
+	</div>
+	<div class="form-entry">
+		<label for="message">Write a short message</label>
+		<textarea name="message" id="message" cols="50" rows="10"></textarea>
+		<div class="error-message" id="message-worning"></div>
+	</div>
+	<button type="submit" id="submit-btn">Submit</button>
+</form>
+<h3 class="form-submition-feedback"></h3>
