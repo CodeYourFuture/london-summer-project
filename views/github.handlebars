@@ -1,0 +1,40 @@
+<header class="top-header">
+  <h1>Github Ripos List</h1>
+</header>
+<section class="data-content">
+  {{#if data}}
+      {{#each data}}
+        <article class="data-article">
+            <h3 class="article-title">{{this.name}}</h3>
+            <p class="article-brief">{{{trimString this.description 0 50}}}</p>
+            <div class="read-more-container">
+                <div class="go-to-repo">
+                    <a href="{{this.html_url}}">Go to Rpo</a>
+                </div>
+                <div class="read-me-link">
+                    <a class="readme-link" href="{{{concatString this.html_url '/blob/' this.default_branch '/README.md'}}}" data-github-get="{{{concatString this.url '/readme'}}}">Open Read Me</a>
+                </div>
+            </div>
+        </article>
+      {{/each}}
+    {{else}}
+        <h3 class="article-title">Failed to retrive repos</h3>
+    {{/if}}
+</section>
+<div class="readme-popup hide-element">
+    <a href="#" class="readme-popup-button">COLSE &times;</a> 
+    <div class="readme-popup-content"></div>
+</div>
+ {{!--        <h1>Repos List From Github</h1>
+        <a class="btn btn-default" id="btnGetRepos" href="#" role="button">Get Repos List</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <br />
+        <div id="reposInfo">
+            <small>No Repos retrieved</small>
+        </div>
+    </div>
+</div>
+<script src="/js/github-client.js"></script> --}}

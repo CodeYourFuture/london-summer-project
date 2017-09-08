@@ -1,0 +1,30 @@
+{
+  "name": "nabil-wardeh-personal-site",
+  "version": "1.0.0",
+  "description": "This project aims to establish my personal digital footprint ",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabilwardeh/london-summer-project.git"
+  },
+  "author": "Nabil Wardeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabilwardeh/london-summer-project/issues"
+  },
+  "homepage": "https://github.com/nabilwardeh/london-summer-project#readme",
+  "devDependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "node-fetch": "^1.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "marked": "^0.3.6"
+  }
+}
